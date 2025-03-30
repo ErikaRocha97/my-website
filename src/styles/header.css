@@ -1,0 +1,30 @@
+header {
+  background-color: #252525;
+  height: 100px;
+  border-bottom: solid #d1d1d1;
+}
+
+#nav_bar {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: end;
+  padding: 0 4rem;
+}
+
+#nav_list {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-logo span {
+  color: #d1d1d1;
+  font-size: 2rem;
+}
+
+.menu-item a {
+  color: #d1d1d1;
+  font-size: 1rem;
+  font-weight: bold;
+}
