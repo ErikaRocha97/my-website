@@ -23,7 +23,8 @@ header {
   font-size: 2rem;
 }
 
-.menu-item a {
+.menu-item a,
+span {
   color: #d1d1d1;
   font-size: 1rem;
   font-weight: bold;

@@ -30,9 +30,12 @@
           </span>
           <span>MyWebsite</span>
         </div>
-        <ul class="nav-list">
+        <ul id="nav_list">
           <li class="menu-item">
-            <a href="#">Sair</a>
+            <a href="#">Login</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Registre-se</a>
           </li>
         </ul>
       </nav>
@@ -40,91 +43,34 @@
 
     <main>
       <div id="my__list">
-        <h2>Minha lista de presentes</h2>
+        <!-- <h2>Minha lista de presentes</h2> -->
         <div id="main__content">
-          <div id="form__container">
-            <h3>Adicionar presente</h3>
-            <form action="" id="add__gift">
-              <div id="input__container">
-                <!-- Cada input -->
-                <div class="input-box">
-                  <label for="gift-name" class="form-label"> Presente </label>
-                  <div class="input-field">
-                    <input
-                      type="text"
-                      name="gift-name"
-                      id="gift-name"
-                      class="form-control"
-                      placeholder="Nome do presente"
-                    />
-                  </div>
-                </div>
+          <nav id="pages__container">
+            <a href="" class="page-card">
+              <i class="bi bi-clipboard"></i>
+              <span>EasyClipBoard</span>
+            </a>
 
-                <!-- Cada input -->
-                <div class="input-box">
-                  <label for="gift-image" class="form-label"> Imagem </label>
-                  <div class="input-field">
-                    <input
-                      type="text"
-                      name="gift-image"
-                      id="gift-image"
-                      class="form-control"
-                      placeholder="Link da imagem"
-                    />
-                  </div>
-                </div>
+            <a href="./giftList.html" class="page-card">
+              <i class="bi bi-gift"></i>
+              <span>MyGiftList</span>
+            </a>
 
-                <!-- Cada input -->
-                <div class="input-box">
-                  <label for="gift-store" class="form-label">
-                    Onde comprar
-                  </label>
-                  <div class="input-field">
-                    <input
-                      type="text"
-                      name="gift-store"
-                      id="gift-store"
-                      class="form-control"
-                      placeholder="Link da loja"
-                    />
-                  </div>
-                </div>
+            <a href="" class="page-card">
+              <i class="bi bi-file-earmark"></i>
+              <span>PageName</span>
+            </a>
 
-                <!-- Cada input -->
-                <div class="input-box">
-                  <label for="gift-price" class="form-label">
-                    Preço estimado
-                  </label>
-                  <div class="input-field">
-                    <input
-                      type="text"
-                      name="gift-price"
-                      id="gift-price"
-                      class="form-control"
-                      placeholder="Preço estimado"
-                    />
-                  </div>
-                </div>
-              </div>
+            <a href="" class="page-card">
+              <i class="bi bi-file-earmark"></i>
+              <span>PageName</span>
+            </a>
 
-              <button type="submit" class="btn-default" id="add__giftButton">
-                Adicionar
-              </button>
-            </form>
-          </div>
-
-          <div id="gift__container">
-            <div class="gift-card">
-              <img class="gift-image" src="./src/images/gift.png" alt="" />
-              <div class="gift-info">
-                <a href="">
-                  <span class="gift-name">Nome do presente</span>
-                </a>
-                <span class="gift-price">R$ 99,99</span>
-              </div>
-              <button class="btn-default">Presentear</button>
-            </div>
-          </div>
+            <a href="" class="page-card">
+              <i class="bi bi-file-earmark"></i>
+              <span>PageName</span>
+            </a>
+          </nav>
         </div>
       </div>
     </main>

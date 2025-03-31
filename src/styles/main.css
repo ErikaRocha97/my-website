@@ -90,7 +90,7 @@ main {
 
 .gift-card {
   display: flex;
-  border-bottom: solid white;
+  border-bottom: solid #d1d1d1;
   height: 100px;
   width: 700px;
   padding: 20px;
@@ -117,4 +117,32 @@ main {
   color: #d1d1d1;
   font-size: 14px;
   font-weight: bold;
+}
+
+#pages__container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: start;
+  gap: 60px;
+}
+
+.page-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  /* border-style: solid; */
+  border: solid #d1d1d1;
+  min-width: 180px;
+  transition: 0.1s;
+}
+
+.page-card i {
+  font-size: 40px;
+}
+
+.page-card:hover {
+  /* padding: 60px; */
 }
