@@ -68,8 +68,41 @@ addGiftButton.addEventListener("click", (event) => {
 
   giftContainer.appendChild(card);
 
+  gifts.push({
+    name: giftName,
+    image: giftImage,
+    store: giftStore,
+    price: giftPrice,
+  });
+
+  localStorage.setItem("gifts", JSON.stringify(gifts));
+
   giftNameInput.value = "";
   giftImageInput.value = "";
   giftStoreInput.value = "";
   giftPriceInput.value = "";
 });
+
+window.onload = () => {
+  const giftsOnLocalStorage = localStorage.getItem("gifts");
+  if (!giftsOnLocalStorage) return;
+
+  // converte String em objeto. Conteúdo do locastorage colocado no array.
+  gifts = JSON.parse(giftsOnLocalStorage);
+
+  gifts.forEach((t) => {
+    const cE = createElement;
+    const card = cE("div", { class: "gift-card" }, [
+      cE("img", { src: t.image, class: "gift-image" }),
+      cE("div", { class: "gift-info" }, [
+        cE("a", { href: t.store }, [
+          cE("span", { class: "gift-name" }, t.name),
+        ]),
+        cE("span", { class: "gift-price" }, t.price),
+      ]),
+      cE("button", { class: "btn-default" }, "Presentear"),
+    ]);
+
+    giftContainer.appendChild(card);
+  });
+};
